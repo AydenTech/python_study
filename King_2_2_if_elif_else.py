@@ -56,3 +56,5 @@ while True:
     else:
         e = e + f
         print(e)
+
+## 연습문제) 윤년 구하기
