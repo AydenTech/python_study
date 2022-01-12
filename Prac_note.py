@@ -23,23 +23,33 @@
 #     print(f'{x}년은 윤년입니다')
 
 ## 답안
-while True:
-    is_leap_year = None
+# while True:
+#     is_leap_year = None
+#
+#     year = int(input())
+#
+#     if year % 4 == 0:
+#         if year % 100 == 0:
+#             if year % 400 == 0:
+#                 is_leap_year = True
+#             else:
+#                 is_leap_year = False
+#         else:
+#             is_leap_year = True
+#     else:
+#         is_leap_year = False
+#
+#     if is_leap_year:
+#         print(f'{year} is a leap year')
+#     else:
+#         print(f'{year} is not a leap year')
 
-    year = int(input())
+## for 문
+family = ['mother', 'father', 'gentleman', 'sexy lady']
+for x in family:        # family의 각 항목 x에 대하여:
+    print(x, len(x))    # x와 x의 길이를 출력하라.
 
-    if year % 4 == 0:
-        if year % 100 == 0:
-            if year % 400 == 0:
-                is_leap_year = True
-            else:
-                is_leap_year = False
-        else:
-            is_leap_year = True
-    else:
-        is_leap_year = False
-
-    if is_leap_year:
-        print(f'{year} is a leap year')
-    else:
-        print(f'{year} is not a leap year')
+a = [4, 5, 6, 7]
+for i in a:
+    if i <= 5:
+        print(i)
