@@ -58,3 +58,21 @@ while True:
         print(e)
 
 ## 연습문제) 윤년 구하기
+
+while True:
+    result = None
+    year = int(input('년도를 입력하세요: '))
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                result = True
+            else:
+                result = False
+        else:
+            result = True
+    else:
+        result = False
+    if result: # if result == True: 로 적어도 무방하나 while True: 로 시작했기 때문에 지금과 같이 적는 것이 나음
+        print(f'{year} is leap year')
+    else:
+        print(f'{year} is not leap year')
