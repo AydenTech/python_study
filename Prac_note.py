@@ -62,17 +62,22 @@
 # for i in range(1, x + 1):
 #     print(i, i * i)
 
-minmax = input('min max 를 입력: ').split() #.split() 을 이용하여 연속된 문자를 나눌 수 있음
-print(minmax)
-min = int(minmax[0])
-max = int(minmax[1])
+# minmax = input('min max 를 입력: ').split() #.split() 을 이용하여 연속된 문자를 나눌 수 있음
+# print(minmax)
+# min = int(minmax[0])
+# max = int(minmax[1])
+#
+# temp = int(input('temperature: '))
+#
+# while temp != -999:
+#     if min <= temp <= max:
+#         print('nothing to report')
+#         temp = int(input('temperature: '))
+#     else:
+#         print('Alert!!!')
+#         break
 
-temp = int(input('temperature: '))
+def printer_Lee():
+    print('I am Haram Lee')
 
-while temp != -999:
-    if min <= temp <= max:
-        print('nothing to report')
-        temp = int(input('temperature: '))
-    else:
-        print('Alert!!!')
-        break
+printer_Lee()
