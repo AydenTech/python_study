@@ -50,3 +50,4 @@ print(palindrome(x))
 #             print(f"'{x}' is a panlindrome")
 #         else:
 #             print(f"'{x}' is not a palindrome")
+
