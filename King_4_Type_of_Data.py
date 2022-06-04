@@ -51,3 +51,9 @@ print(palindrome(x))
 #         else:
 #             print(f"'{x}' is not a palindrome")
 
+
+
+a = 3
+print(a)
+for a in range(3):
+    print(a)
