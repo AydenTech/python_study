@@ -196,6 +196,19 @@
 
 ## filter(lambda x: x<5, range(10))
 # print(list(filter(lambda x: x<5, range(10))))
-filter(lambda x: x % 2, range(10))
-list(filter(lambda x: x % 2, range(10)))
-print(list(filter(lambda x: x % 2, range(10))))
+# filter(lambda x: x % 2, range(10))
+# list(filter(lambda x: x % 2, range(10)))
+# print(list(filter(lambda x: x % 2, range(10))))
+
+temp_range = input('put min and max temp:').split()
+print(temp_range)
+min_temp = int(temp_range[0])
+max_temp = int(temp_range[1])
+temp = int(input('temp?'))
+while temp != 999:
+    if min_temp <= temp <= max_temp:
+        print(f'{temp} is good')
+        temp = int(input('next temp: '))
+    else:
+        print(f'{temp} is out of range!!!')
+        break
