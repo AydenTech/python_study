@@ -1,10 +1,10 @@
-a = 3
-for i in range(1, 10):
-    print(a, '*', i, '=', a * i)
-
-b = 4
-for i in range(1, 10):
-    print(f'{b} * {i} = {b * i}')
+# a = 3
+# for i in range(1, 10):
+#     print(a, '*', i, '=', a * i)
+#
+# b = 4
+# for i in range(1, 10):
+#     print(f'{b} * {i} = {b * i}')
 
 
 ##구구단 출력하기
