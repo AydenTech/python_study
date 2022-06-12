@@ -27,7 +27,7 @@ for i in range(1, x + 1):
 
 ## 예제) 온도 범위 입력받고 그 외는 경고 및 종료, 범위 내면 계속, -999면 종료
 minmax = input('min max 를 입력: ').split()
-#.split() 을 이용하여 연속된 문자를 나눌 수 있음
+#.split() 을 이용하여 연속된 문자를 나눌 수 있음(위에서 입력후 바로 나눔)
 print(minmax)
 min = int(minmax[0])
 max = int(minmax[1])
