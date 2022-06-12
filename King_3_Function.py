@@ -109,7 +109,7 @@ def e_is_10():
     return e
 
 print(e_is_10())
-print(e)
+print(e)  # 함수 바깥에 있어도 전역변수기 때문에 10으로 들어옴
 
 
 # ## 매개변수
@@ -122,6 +122,8 @@ print(e)
 
 # map(lambda x: x ** 2, range(5))
 # list(map(lambda x: x ** 2, range(5)))
+
+
 ## reduce(함수, 시퀀스)
 # from functools import reduce
 # reduce(lambda x, y: x + y, [0,1,2,3,4])
