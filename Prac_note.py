@@ -200,15 +200,38 @@
 # list(filter(lambda x: x % 2, range(10)))
 # print(list(filter(lambda x: x % 2, range(10))))
 
-temp_range = input('put min and max temp:').split()
-print(temp_range)
-min_temp = int(temp_range[0])
-max_temp = int(temp_range[1])
-temp = int(input('temp?'))
-while temp != 999:
-    if min_temp <= temp <= max_temp:
-        print(f'{temp} is good')
-        temp = int(input('next temp: '))
+# temp_range = input('put min and max temp:').split()
+# print(temp_range)
+# min_temp = int(temp_range[0])
+# max_temp = int(temp_range[1])
+# temp = int(input('temp?'))
+# while temp != 999:
+#     if min_temp <= temp <= max_temp:
+#         print(f'{temp} is good')
+#         temp = int(input('next temp: '))
+#     else:
+#         print(f'{temp} is out of range!!!')
+#         break
+
+## 음수가 입력되면 중단하고 그 전까지 계산한 값을 출력하는 파이썬 스크립트를 작성하세요.
+
+# num = 0
+# while True:
+#     a = int(input('integer: '))
+#     if a >= 0:
+#         num = num + a
+#         print(num)
+#     else:
+#         break
+
+# 구구단
+a = int(input('몇단?: '))
+def gugu(m):
+    if m <= 9:
+        for i in range(1, 10):
+            print(f'{m} * {i} = {m * i}')
     else:
-        print(f'{temp} is out of range!!!')
-        break
+        for j in range(1, 100):
+            print(f'{m} * {j} = {m * j}')
+
+gugu(a)
