@@ -225,13 +225,70 @@
 #         break
 
 # 구구단
-a = int(input('몇단?: '))
-def gugu(m):
-    if m <= 9:
-        for i in range(1, 10):
-            print(f'{m} * {i} = {m * i}')
-    else:
-        for j in range(1, 100):
-            print(f'{m} * {j} = {m * j}')
+# a = int(input('몇단?: '))
+# def gugu(m):
+#     if m <= 9:
+#         for i in range(1, 10):
+#             print(f'{m} * {i} = {m * i}')
+#     else:
+#         for j in range(1, m+1):
+#             print(f'{m} * {j} = {m * j}')
+#
+# gugu(a)
 
-gugu(a)
+# def TF_Quiz():
+#     ans1 = input('2+3= ')
+#     return 2+3 == int(ans1)
+#
+# print(TF_Quiz())
+
+
+# # 나이구하기
+# from datetime import datetime
+# today = datetime.today()
+#
+# print(today)
+# print(today.year)
+# x = int(input('your birth year: '))
+#
+# def age_fn(x):
+#     return today.year - x + 1
+#
+# print('your age is...')
+# print(age_fn(x))
+
+
+# # 지역변수 전역변수
+# def e_is_10():
+#     global e  # 전역변수
+#     e = 10
+#     print('e 값은 ', e, '입니다')
+#     return e
+#
+# print(e_is_10())
+# print(e)  #함수안에 있지 않지만 전역변수라 10으로 들어옴
+
+
+# ## 매개변수
+# def hap(x, y):
+#     return x+y
+# print(hap(3, 4))
+#
+# (lambda x,y: x+y)(10,20)
+# print((lambda x,y: x+y)(10,20))
+#
+# map(lambda x: x ** 2, range(5))
+# list(map(lambda x: x ** 2, range(5)))
+#
+# print(map(lambda x: x ** 2, range(5)))
+# print(list(map(lambda x: x ** 2, range(5))))
+
+
+# reduce(함수, 시퀀스)
+from functools import reduce
+reduce(lambda x, y: x + y, [0,1,2,3,4])
+print(reduce(lambda x, y: x + y, [0,1,2,3,4]))
+
+from functools import reduce
+reduce(lambda x, y: y+x, 'abcde')
+print(reduce(lambda x, y: y+x, 'abcde'))
