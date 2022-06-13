@@ -30,14 +30,14 @@ print('Python'.replace('P', 'K'))
 x = str(input('input word: '))
 
 
-def palindrome(x):
-
-    if x[::-1] == x:
-        return True
-    else:
-        return False
-
-print(palindrome(x))
+# def palindrome(x):
+#
+#     if x[::-1] == x:
+#         return True
+#     else:
+#         return False
+#
+# print(palindrome(x))
 
 # def palindrome(s):
 #     s = s.lower()
