@@ -285,10 +285,80 @@
 
 
 # reduce(함수, 시퀀스)
-from functools import reduce
-reduce(lambda x, y: x + y, [0,1,2,3,4])
-print(reduce(lambda x, y: x + y, [0,1,2,3,4]))
+# from functools import reduce
+# reduce(lambda x, y: x + y, [0,1,2,3,4])
+# print(reduce(lambda x, y: x + y, [0,1,2,3,4]))
+#
+# from functools import reduce
+# reduce(lambda x, y: y+x, 'abcde')
+# print(reduce(lambda x, y: y+x, 'abcde'))
 
-from functools import reduce
-reduce(lambda x, y: y+x, 'abcde')
-print(reduce(lambda x, y: y+x, 'abcde'))
+# from functools import reduce
+# reduce(lambda x, y: y+x, ['a','b','c'])
+# print(reduce(lambda x, y: y+x, ['a','b','c']))
+#
+# print(list(filter(lambda x: x<5, range(10))))
+# print(list(filter(lambda x: 3<x<5, range(10))))
+
+## Chap. 4 Data Type
+# print(type(1000))
+# print(type(2.43))
+# print(type(3+4j))
+# print(type("love"))
+# print(type(['L','o']))
+# print(type(('L','o')))
+
+# p = 'python'
+# print(p[0:2])
+# print(p[1:2])
+# r = '12345'
+# print(r[:])
+# print(r[::-1])
+# print(r[-2:])
+
+# print(type(True))
+# print('PYTHON'.lower())
+# print('Python'.replace('y', 'i'))
+
+# x = str(input('any word: '))
+#
+# def palindrome(x):
+#     x = x.lower()
+#     x = x.replace(' ', '')
+#     return x[:] == x[::-1]
+#
+# print(palindrome(x))
+
+# s = "Hello Python!"
+# print(s.find('P'))
+#
+# s.split()
+# print(s.split())  # 공백에서 분할 -> 리스트로 생성
+# print(s.split()[1], s.split()[1])
+# a = s.split()
+# print(a)
+# del a[0]
+# print(a)
+
+# w = [3, 7, 11]
+# w.append(4)
+# print(w)
+#
+# w.sort()
+# print(w)
+#
+# w.insert(1, 9)
+# print(w)
+#
+# w.sort()
+# del w[0]
+# print(w)
+#
+# a = w.pop()
+# print(w)
+# print(a)
+#
+# w[0] = 0
+# print(w)
+
+## List 까지
