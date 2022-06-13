@@ -103,7 +103,7 @@ print(compound_interest_amount(p, r, t, n))
 
 ## 지역변수 전역변수
 def e_is_10():
-    global e  # 전역변수
+    global e  # 전역변수(함수외부에서도 그대로 입력)
     e = 10
     print('e 값은 ', e, '입니다')
     return e
@@ -141,5 +141,6 @@ filter(lambda x: x % 2, range(10))
 list(filter(lambda x: x % 2, range(10)))
 print(list(filter(lambda x: x % 2, range(10))))
 ## 따라서 이 함수에서 남는 것은 홀수들 [1,3,5,7,9]
+## x % 2-1 하면 짝수만 남음, 보통 그냥 range로 필터 주는거랑 차이가 있음 0이면 버리고 1이면 남기니까
 
 
