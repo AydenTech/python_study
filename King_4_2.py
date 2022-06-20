@@ -140,10 +140,26 @@ stem_leaf = [[], [], []]
 
 for j in score:
     d, m = divmod(j, 10)  # j 를 10 으로 나눈 몫 나머지
-    stem_leaf[d].append(m)  # 몫이 0,1,2가 나올텐데 암튼 그럼 0,1,2번째 원소List에 나머지(m)를 삽입
+    stem_leaf[d].append(m)  # 몫이 0,1,2가 나올텐데 암튼
+    # 그럼 0,1,2번째 원소List에 나머지(m)를 삽입
 
 print(stem_leaf)
 
 for k in range(len(stem_leaf)):  # stem_leaf 크기가 3이니깐 k 는 0, 1, 2 가 됨
     print(f'{k}: {stem_leaf[k]}')
+
+
+## Chap. 4.2.3 각 자리 숫자의 합을 구하는 함수를 map()을 이용해서 작성
+a = int(input('integer: '))
+
+def sumofdigit(a):
+    b = map(int, list(str(a)))
+    return sum(b)
+
+print(sumofdigit(a))
+
+
+## Chap 4.2.4 소수구하기(2,3,5,7,11...) 30미만의 소수 구하기;
+
+
 
