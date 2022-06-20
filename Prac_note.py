@@ -362,6 +362,7 @@
 # print(w)
 
 ## List 까지
-order = ['p',['q','r','a','b'],'s']
-print(order[1])
-print(order[1][2])
+# order = ['p',['q','r','a','b'],'s']
+# print(order[1])
+# print(order[1][2])
+
