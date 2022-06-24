@@ -174,4 +174,5 @@ def prime(n):
     print(L2)
 
 if __name__ == '__main__':
-    prime(int(input())) 
+    prime(int(input()))
+# HOW it works
