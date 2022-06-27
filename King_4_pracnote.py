@@ -152,7 +152,7 @@
 
 
 ## sum of digits
-# a = int(input('integer: '))
+# a = int(input('put any integer: '))
 #
 # def sumofdigit(a):
 #     b = map(int, list(str(a)))
@@ -160,19 +160,56 @@
 #
 # print(sumofdigit(a))
 
-
 ## 30 미만의 소수 구하기
-def prime(n):
-    L = list(range(2, n + 1))
-    L2 = L[:] # https://stackoverflow.com/a/10665602
+# def prime(n):
+#     L = list(range(2, n + 1))
+#     L2 = L[:] # https://stackoverflow.com/a/10665602
+#
+#     for p in L:
+#         for q in L:
+#             if (q in L2) and (q != p and q % p == 0):
+#                 L2.remove(q)
+#
+#     print(L2)
+#
+# if __name__ == '__main__':
+#     prime(int(input()))
 
-    for p in L:
-        for q in L:
-            if (q in L2) and (q != p and q % p == 0):
-                L2.remove(q)
+# def digitsum(num):
+#     sum = 0
+#     a = str(num)
+#     b = list(a)
+#     for i in b:
+#         sum += int(i)
+#
+#     return sum
+#
+# print(digitsum(11))
 
-    print(L2)
 
-if __name__ == '__main__':
-    prime(int(input()))
-# HOW it works
+## Again, getting a prime
+# def primef(n):
+#     L = list(range(2, n+1))
+#     L2 = L
+#     for p in L:
+#         for q in L:
+#             if (q in L2) and (q != p and q % p == 0):
+#                 L2.remove(q)
+#
+#     print(L2)
+#
+# if __name__=='__main__':
+#     primef(int(input('any integer: ')))
+
+
+a = int(input())
+b = 0
+c = []
+
+while True:
+    a, b = divmod(a, 2)
+    c.insert(0, b)
+    if a == 0:
+        break
+
+print(c)
